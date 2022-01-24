@@ -10,7 +10,7 @@ public class RunBehaviour : StateMachineBehaviour
 
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		bool a=false;
-		if(Input.GetKey("up") && Input.GetKey("right shift")){
+		if((Input.GetKey("up") && Input.GetKey("right shift")) || (Input.GetKey("w") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -90f, 0f);
 			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
 			animator.SetBool("run",true);
@@ -18,7 +18,7 @@ public class RunBehaviour : StateMachineBehaviour
 			animator.SetBool("idle",false);
 			a=true;
 		}
-		else if(Input.GetKey("down") && Input.GetKey("right shift")){
+		else if((Input.GetKey("down") && Input.GetKey("right shift")) || (Input.GetKey("s") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 90f, 0f);
 			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
 			animator.SetBool("run",true);
@@ -26,7 +26,7 @@ public class RunBehaviour : StateMachineBehaviour
 			animator.SetBool("idle",false);
 			a=true;
 		}
-		else if(Input.GetKey("left") && Input.GetKey("right shift")){
+		else if((Input.GetKey("left") && Input.GetKey("right shift")) || (Input.GetKey("a") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -180f, 0f);
 			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
 			animator.SetBool("run",true);
@@ -34,7 +34,7 @@ public class RunBehaviour : StateMachineBehaviour
 			animator.SetBool("idle",false);
 			a=true;
 		}
-		else if(Input.GetKey("right") && Input.GetKey("right shift")){
+		else if((Input.GetKey("right") && Input.GetKey("right shift")) || (Input.GetKey("d") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 0f, 0f);
 			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
 			animator.SetBool("run",true);
@@ -43,7 +43,7 @@ public class RunBehaviour : StateMachineBehaviour
 			a=true;
 		}
 		if(!a){
-			if(!Input.GetKey("right shift") && (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("right") || Input.GetKey("down"))){
+			if((!Input.GetKey("right shift") && (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("right") || Input.GetKey("down"))) || (!Input.GetKey("left shift") && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")))){
 				animator.SetBool("walk",true);
 				animator.SetBool("run",false);
 				animator.SetBool("idle",false);
