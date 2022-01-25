@@ -7,7 +7,13 @@ public class PlayerCube : MonoBehaviour{
     public Rigidbody rb;
     public Animator animator;
 
+    void Start(){
+        HealthBarHandler.SetHealthBarValue(0.6f);
+        OxygenBarHandler.SetOxygenBarValue(1f);
+    }
+
     void FixedUpdate(){
+        OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue()-0.0001f);
         if(!animator.GetBool("jump") && Input.GetKey("space")){
             rb.AddForce(0,150*Time.deltaTime,0,ForceMode.VelocityChange);
             if(Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("left") || Input.GetKey("right")){
