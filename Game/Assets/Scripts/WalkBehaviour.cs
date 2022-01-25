@@ -19,7 +19,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		if(Input.GetKey("up")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("walk",true);
 			animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -27,7 +27,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("down")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("walk",true);
 			animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -35,7 +35,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("left")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -180f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("walk",true);
             animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -43,7 +43,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("right")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 0f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("walk",true);
             animator.SetBool("idle",false);
 			animator.SetBool("run",false);

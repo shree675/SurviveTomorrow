@@ -6,6 +6,6 @@ public class CameraFollow : MonoBehaviour
 {
     public PlayerCube cube;
 	void FixedUpdate () {
-		this.gameObject.transform.position=cube.transform.position+new Vector3(6f,2.5f,0.25f);
+		this.gameObject.transform.position=cube.transform.position+new Vector3(0.6f,0.25f,0.025f);
 	}
 }
