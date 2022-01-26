@@ -13,9 +13,9 @@ public class PlayerCube : MonoBehaviour{
     }
 
     void FixedUpdate(){
-        OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue()-0.0001f);
+        OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue()-0.0002f);
         if(!animator.GetBool("jump") && Input.GetKey("space")){
-            rb.AddForce(0,150*Time.deltaTime,0,ForceMode.VelocityChange);
+            rb.AddForce(0,100*Time.deltaTime,0,ForceMode.VelocityChange);
             if(Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("left") || Input.GetKey("right")){
                 rb.AddForce(this.gameObject.transform.forward,ForceMode.VelocityChange);
             }
@@ -25,21 +25,25 @@ public class PlayerCube : MonoBehaviour{
             animator.SetBool("jump", true);
         }
         if(Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("left") || Input.GetKey("right")){
-            this.gameObject.transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+            this.gameObject.transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
         }
         if(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){
-            this.gameObject.transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+            this.gameObject.transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
         }
         if(Input.GetKey("right shift") && (Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("left") || Input.GetKey("right"))){
-            this.gameObject.transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+            this.gameObject.transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
         }
         if(Input.GetKey("left shift") && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))){
-            this.gameObject.transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+            this.gameObject.transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
         }
     }
 
     void OnCollisionEnter(Collision collision){
         animator.SetBool("jump",false);
+        // Debug.Log(collision.collider.name+" "+collision.collider.tag);
+        // if(collision.collider.tag=="OxygenUnit"){
+		// 	OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue()+0.01f);
+		// }
     }
 
 }
