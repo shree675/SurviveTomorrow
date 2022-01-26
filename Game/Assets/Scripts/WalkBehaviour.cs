@@ -19,7 +19,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		if(Input.GetKey("up") || Input.GetKey("w")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
 			animator.SetBool("walk",true);
 			animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -27,7 +27,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("down") || Input.GetKey("s")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
 			animator.SetBool("walk",true);
 			animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -35,7 +35,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("left") || Input.GetKey("a")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -180f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
 			animator.SetBool("walk",true);
             animator.SetBool("idle",false);
 			animator.SetBool("run",false);
@@ -43,7 +43,7 @@ public class WalkBehaviour : StateMachineBehaviour
 		}
 		else if(Input.GetKey("right") || Input.GetKey("d")){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 0f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.2f*Time.deltaTime);
 			animator.SetBool("walk",true);
             animator.SetBool("idle",false);
 			animator.SetBool("run",false);

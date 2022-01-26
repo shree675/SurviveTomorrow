@@ -12,7 +12,7 @@ public class RunBehaviour : StateMachineBehaviour
 		bool a=false;
 		if((Input.GetKey("up") && Input.GetKey("right shift")) || (Input.GetKey("w") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("run",true);
 			animator.SetBool("walk",false);
 			animator.SetBool("idle",false);
@@ -20,7 +20,7 @@ public class RunBehaviour : StateMachineBehaviour
 		}
 		else if((Input.GetKey("down") && Input.GetKey("right shift")) || (Input.GetKey("s") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("run",true);
 			animator.SetBool("walk",false);
 			animator.SetBool("idle",false);
@@ -28,7 +28,7 @@ public class RunBehaviour : StateMachineBehaviour
 		}
 		else if((Input.GetKey("left") && Input.GetKey("right shift")) || (Input.GetKey("a") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -180f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("run",true);
 			animator.SetBool("walk",false);
 			animator.SetBool("idle",false);
@@ -36,7 +36,7 @@ public class RunBehaviour : StateMachineBehaviour
 		}
 		else if((Input.GetKey("right") && Input.GetKey("right shift")) || (Input.GetKey("d") && Input.GetKey("left shift"))){
 			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 0f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.6f*Time.deltaTime);
+			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("run",true);
 			animator.SetBool("walk",false);
 			animator.SetBool("idle",false);

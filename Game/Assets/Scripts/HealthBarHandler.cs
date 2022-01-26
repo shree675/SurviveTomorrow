@@ -1,19 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
- 
+
 public class HealthBarHandler : MonoBehaviour
 {
     private static Image HealthBarImage;
 
     private void Start()
     {
-        HealthBarImage = GetComponent<Image>();
-        Debug.Log(HealthBarImage);
+        // HealthBarImage = GameObject.Find("Image1").GetComponent<Image>();
     }
 
     public static void SetHealthBarValue(float value)
     {
+        HealthBarImage = GameObject.Find("Image1").GetComponent<Image>();
         HealthBarImage.fillAmount = Math.Max(0,value);
         if(HealthBarImage.fillAmount < 0.3f)
         {
