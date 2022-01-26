@@ -10,18 +10,18 @@ public class HealthBarHandler : MonoBehaviour
 
     private void Start()
     {
-        // HealthBarImage = GameObject.Find("Image1").GetComponent<Image>();
+        HealthBarImage = GameObject.Find("Image1").GetComponent<Image>();
     }
 
     public static void SetHealthBarValue(float value)
     {
         HealthBarImage = GameObject.Find("Image1").GetComponent<Image>();
-        HealthBarImage.fillAmount = Math.Max(0,value);
-        if(HealthBarImage.fillAmount < 0.3f)
+        HealthBarImage.fillAmount = Math.Max(0, value);
+        if (HealthBarImage.fillAmount < 0.3f)
         {
             SetHealthBarColor(Color.red);
         }
-        else if(HealthBarImage.fillAmount < 0.6f)
+        else if (HealthBarImage.fillAmount < 0.6f)
         {
             SetHealthBarColor(Color.yellow);
         }
@@ -30,15 +30,15 @@ public class HealthBarHandler : MonoBehaviour
             SetHealthBarColor(Color.green);
         }
     }
- 
+
     public static float GetHealthBarValue()
     {
         return HealthBarImage.fillAmount;
     }
- 
+
     public static void SetHealthBarColor(Color healthColor)
     {
         HealthBarImage.color = healthColor;
     }
- 
+
 }
