@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class RainDetectionScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private bool collision=false;
+    
     void Start()
     {
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // if(!collision){
+        //     audioData.Stop();
+        // }
+        // collision=false;
+        // if(clouds.transform.position)
     }
 
     void OnParticleCollision(GameObject other){
-
-        HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.02f);
-    
+        HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.005f);
+        if(!collision){
+            // audioData.Play(0);
+        }
+        collision=true;
     }
+
+    // void OnParticleCollisionEnd(){
+        // audioData.Stop();
+    // }
 }

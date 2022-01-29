@@ -11,7 +11,7 @@ public class IdleBehaviour : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       if((Input.GetKey("right shift") && (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("right") || Input.GetKey("down"))) || (Input.GetKey("left shift") && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")))){
+       if((Input.GetKey("right shift") && Input.GetKey("up")) || (Input.GetKey("left shift") && Input.GetKey("w"))){
 			animator.SetBool("walk",false);
             animator.SetBool("idle",false);
 			animator.SetBool("run",true);
@@ -20,24 +20,6 @@ public class IdleBehaviour : StateMachineBehaviour
 		else if(Input.GetKey("up") || Input.GetKey("w")){
 			animator.SetBool("walk",true);
 			animator.SetBool("run",false);
-			animator.SetBool("idle",false);
-			return;
-		}
-		else if(Input.GetKey("left") || Input.GetKey("a")){
-			animator.SetBool("walk",true);
-			animator.SetBool("run",false);
-			animator.SetBool("idle",false);
-			return;
-		}
-		else if(Input.GetKey("down") || Input.GetKey("s")){
-			animator.SetBool("run",false);
-			animator.SetBool("walk",true);
-			animator.SetBool("idle",false);
-			return;
-		}
-		else if(Input.GetKey("right") || Input.GetKey("d")){
-			animator.SetBool("run",false);
-			animator.SetBool("walk",true);
 			animator.SetBool("idle",false);
 			return;
 		}

@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CloudMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    private float time = 0.0f; 
+    private float time = 0.0f;
+    public PlayerCube cube;
+    public AudioSource audioData;
+    private bool collision = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +37,16 @@ public class CloudMovement : MonoBehaviour
             rb.velocity = new Vector3(-1, 0, 0);
         }else if(t == 5){
             rb.velocity = new Vector3(0, 0, -1);
+        }
+        if(Math.Abs(cube.transform.position.x-transform.position.x) < 6.5f && Math.Abs(cube.transform.position.z-transform.position.z)<6.5f){
+            if(!collision){
+                audioData.Play(0);
+            }
+            collision=true;
+        }
+        else{
+            collision=false;
+            audioData.Stop();
         }
     }
 }

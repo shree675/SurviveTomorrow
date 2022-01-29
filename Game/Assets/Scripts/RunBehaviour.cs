@@ -11,31 +11,6 @@ public class RunBehaviour : StateMachineBehaviour
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		bool a=false;
 		if((Input.GetKey("up") && Input.GetKey("right shift")) || (Input.GetKey("w") && Input.GetKey("left shift"))){
-			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
-			animator.SetBool("run",true);
-			animator.SetBool("walk",false);
-			animator.SetBool("idle",false);
-			a=true;
-		}
-		else if((Input.GetKey("down") && Input.GetKey("right shift")) || (Input.GetKey("s") && Input.GetKey("left shift"))){
-			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 90f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
-			animator.SetBool("run",true);
-			animator.SetBool("walk",false);
-			animator.SetBool("idle",false);
-			a=true;
-		}
-		else if((Input.GetKey("left") && Input.GetKey("right shift")) || (Input.GetKey("a") && Input.GetKey("left shift"))){
-			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, -180f, 0f);
-			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
-			animator.SetBool("run",true);
-			animator.SetBool("walk",false);
-			animator.SetBool("idle",false);
-			a=true;
-		}
-		else if((Input.GetKey("right") && Input.GetKey("right shift")) || (Input.GetKey("d") && Input.GetKey("left shift"))){
-			animator.GetComponentInParent<PlayerCube>().transform.rotation=Quaternion.Euler(0f, 0f, 0f);
 			animator.GetComponentInParent<PlayerCube>().transform.Translate(Vector3.forward*0.4f*Time.deltaTime);
 			animator.SetBool("run",true);
 			animator.SetBool("walk",false);
@@ -43,7 +18,7 @@ public class RunBehaviour : StateMachineBehaviour
 			a=true;
 		}
 		if(!a){
-			if((!Input.GetKey("right shift") && (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("right") || Input.GetKey("down"))) || (!Input.GetKey("left shift") && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")))){
+			if((!Input.GetKey("right shift") && Input.GetKey("up")) || (!Input.GetKey("left shift") && Input.GetKey("w"))){
 				animator.SetBool("walk",true);
 				animator.SetBool("run",false);
 				animator.SetBool("idle",false);
