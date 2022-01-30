@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerCube : MonoBehaviour
 {
@@ -23,8 +24,8 @@ public class PlayerCube : MonoBehaviour
         float h = 2.5f * Input.GetAxis("Mouse X");
         this.gameObject.transform.Rotate(0, h, 0);
         OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue() - 0.0002f);
-        if (!animator.GetBool("jump") && Input.GetKey("space")){
-            rb.AddForce(0, 50 * Time.deltaTime, 0, ForceMode.VelocityChange);
+        if (!animator.GetBool("jump") && Input.GetKey("space") && Math.Round(rb.velocity.y,2) == 0){
+            rb.AddForce(0, 100 * Time.deltaTime, 0, ForceMode.VelocityChange);
             animator.SetBool("jump", true);
         }
         if(Input.GetKey("up") || Input.GetKey("w")){
@@ -55,7 +56,6 @@ public class PlayerCube : MonoBehaviour
     }
 
     void OnCollisionStay(Collision collision){
-        animator.SetBool("jump", false);
     }
 
 }
