@@ -20,6 +20,14 @@ public class PlayerCube : MonoBehaviour
     }
 
     void FixedUpdate(){
+        if(HealthBarHandler.GetHealthBarValue()<=0){
+            animator.SetBool("die",true);
+            return;
+        }
+        if(OxygenBarHandler.GetOxygenBarValue()<=0){
+            animator.SetBool("die",true);
+            return;
+        }
         time+=Time.deltaTime;
         float h = 2.5f * Input.GetAxis("Mouse X");
         this.gameObject.transform.Rotate(0, h, 0);
