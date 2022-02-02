@@ -7,12 +7,14 @@ public class OxygenTrigger : MonoBehaviour{
     public AudioSource audioData;
     bool isPlaying = false;
 
-    void OnTriggerStay(){
+    void OnTriggerStay(Collider collider){
+        if(collider.name=="PlayerCube"){
         if(!isPlaying){
             audioData.Play(0);
             isPlaying = true;
         }
         OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue() + 0.005f);
+        }
     }
 
     void OnTriggerExit(){
