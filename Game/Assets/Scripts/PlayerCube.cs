@@ -33,7 +33,7 @@ public class PlayerCube : MonoBehaviour
         this.gameObject.transform.Rotate(0, h, 0);
         OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue() - 0.0002f);
         if (!animator.GetBool("jump") && Input.GetKey("space") && Math.Round(rb.velocity.y,2) == 0){
-            rb.AddForce(0, 100 * Time.deltaTime, 0, ForceMode.VelocityChange);
+            rb.AddForce(0, 132 * Time.deltaTime, 0, ForceMode.VelocityChange);
             animator.SetBool("jump", true);
         }
         if(Input.GetKey("up") || Input.GetKey("w")){

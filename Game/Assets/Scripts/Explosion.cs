@@ -19,14 +19,16 @@ public class Explosion : MonoBehaviour
         time = 0;
     }
 
-    void OnTriggerStay()
+    void OnTriggerStay(Collider collider)
     {
-        countdown -= Time.deltaTime;
-        if (countdown <= 0f && !hasExploded)
-        {
-            audioData.Play(0);
-            Explode();
-            hasExploded = true;
+        if(collider.name=="PlayerCube"){
+            countdown -= Time.deltaTime;
+            if (countdown <= 0f && !hasExploded)
+            {
+                audioData.Play(0);
+                Explode();
+                hasExploded = true;
+            }
         }
     }
 
