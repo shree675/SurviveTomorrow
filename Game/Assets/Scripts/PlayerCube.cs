@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class PlayerCube : MonoBehaviour
 {
@@ -9,23 +10,38 @@ public class PlayerCube : MonoBehaviour
     public Rigidbody rb;
     public Animator animator;
     private float time;
+    private float exitTime;
     public AudioSource audioData;
-    public AudioSource audioDataFire;
+    [SerializeField] Text text;
 
     void Start()
     {
         HealthBarHandler.SetHealthBarValue(1f);
         OxygenBarHandler.SetOxygenBarValue(1f);
+        text.enabled=false;
+        text.gameObject.SetActive(false);
         time=0;
+        exitTime=0;
     }
 
     void FixedUpdate(){
+        if(exitTime>5f){
+            text.enabled=false;
+            text.gameObject.SetActive(false);
+            Application.Quit();
+        }
         if(HealthBarHandler.GetHealthBarValue()<=0){
             animator.SetBool("die",true);
+            text.enabled=true;
+            text.gameObject.SetActive(true);
+            exitTime+=Time.deltaTime;
             return;
         }
         if(OxygenBarHandler.GetOxygenBarValue()<=0){
             animator.SetBool("die",true);
+            text.enabled=true;
+            text.gameObject.SetActive(true);
+            exitTime+=Time.deltaTime;
             return;
         }
         time+=Time.deltaTime;
