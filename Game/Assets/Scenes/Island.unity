@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2630,6 +2630,190 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d130ca43cb624b2fbdd37ecb558801f, type: 3}
+--- !u!1001 &445020302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 271.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.9469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 440.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_Name
+      value: PropaneTank (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+--- !u!1 &445020303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 445020302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &445020304
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445020303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &445020305
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445020303}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &445112106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 262.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.9469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 464.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_Name
+      value: PropaneTank (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+--- !u!1 &445112107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 445112106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &445112108
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445112107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &445112109
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445112107}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &468574123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2877,6 +3061,41 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &527276707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 280401938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &527276715
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527276707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &527276716
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527276707}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4595,6 +4814,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeade5eac92f39e439a9bf65b8f4007c, type: 3}
+--- !u!1001 &862754556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 283.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.9469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 462.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_Name
+      value: PropaneTank (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+--- !u!1 &862754557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 862754556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &862754558
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862754557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &862754559
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862754557}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &867258509
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,6 +7487,98 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1459912568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.9469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 445.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_Name
+      value: PropaneTank (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+--- !u!1 &1459912569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 1459912568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1459912570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459912569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &1459912571
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459912569}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1463439831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8181,6 +8584,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1648101427905952162, guid: 3d130ca43cb624b2fbdd37ecb558801f, type: 3}
   m_PrefabInstance: {fileID: 420716604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1713318077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 260.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.9469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 451.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098780872711549211, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+      propertyPath: m_Name
+      value: PropaneTank (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+--- !u!1 &1713318078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7622411893486873505, guid: 23f84e9e7b10b0246a2365ced5621995, type: 3}
+  m_PrefabInstance: {fileID: 1713318077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1713318079
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713318078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2102694025863213805, guid: ceac5f9463b0d88428b46eae196f477b, type: 3}
+--- !u!54 &1713318080
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713318078}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1715547813
 PrefabInstance:
   m_ObjectHideFlags: 0
