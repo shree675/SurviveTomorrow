@@ -8,7 +8,7 @@ public class OutroSwitchScene : MonoBehaviour {
 
     void FixedUpdate(){
         time += Time.deltaTime;
-        if(time >= 5f){
+        if(time >= 26f){
             Application.LoadLevel("IntroScene");
         }
     }

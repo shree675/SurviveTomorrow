@@ -9,7 +9,7 @@ public class IntroSwitchScene : MonoBehaviour{
     void FixedUpdate(){
         if(PlayButton.played){
             time += Time.deltaTime;
-            if(time >= 5f){
+            if(time >= 39f){
                 Application.LoadLevel("Island");
             }
         }
