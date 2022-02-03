@@ -18,6 +18,16 @@ The player loses his life if he is out of health or oxygen. Lahron needs to meet
 
 ## Screenshots
 
+<img src="https://user-images.githubusercontent.com/58718144/152342088-fdf80bb4-a7c9-4596-9d0c-b13f75e41e1d.png" width=650></img>
+
+<img src="https://user-images.githubusercontent.com/58718144/152342133-fc932466-e905-4275-add1-03a2b910b5f8.png" width=650></img>
+
+<img src="https://user-images.githubusercontent.com/58718144/152342169-1f94768c-ddc6-473c-b4b2-f2066c04dcdb.png" width=650></img>
+
+<img src="https://user-images.githubusercontent.com/58718144/152342211-36ddd058-d5b4-4fcf-8c96-cdc902e29922.png" width=650></img>
+
+<img src="https://user-images.githubusercontent.com/58718144/152342230-2d91b5f5-f246-45f8-847f-72cba0e525dd.png" width=650></img>
+
 ## Play the Game
 (link to play the game)
 
