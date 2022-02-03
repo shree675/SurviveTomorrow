@@ -11,20 +11,28 @@ public class PlayerCube : MonoBehaviour
     public Animator animator;
     private float time;
     private float exitTime;
+    private float endTime;
     public AudioSource audioData;
     [SerializeField] Text text;
 
     void Start()
     {
         HealthBarHandler.SetHealthBarValue(1f);
-        OxygenBarHandler.SetOxygenBarValue(1f);
+        // OxygenBarHandler.SetOxygenBarValue(1f);
         text.enabled=false;
         text.gameObject.SetActive(false);
         time=0;
         exitTime=0;
+        endTime=0;
     }
 
     void FixedUpdate(){
+        if(BatteryTrigger.gameOver!=null && BatteryTrigger.gameOver==true){
+            endTime+=Time.deltaTime;
+            if(endTime>=2f){
+                Application.LoadLevel("OutroScene");
+            }
+        }
         if(exitTime>5f){
             text.enabled=false;
             text.gameObject.SetActive(false);
@@ -45,7 +53,7 @@ public class PlayerCube : MonoBehaviour
             return;
         }
         time+=Time.deltaTime;
-        float h = 2.5f * Input.GetAxis("Mouse X");
+        float h = 3f * Input.GetAxis("Mouse X");
         this.gameObject.transform.Rotate(0, h, 0);
         OxygenBarHandler.SetOxygenBarValue(OxygenBarHandler.GetOxygenBarValue() - 0.0002f);
         if (!animator.GetBool("jump") && Input.GetKey("space") && Math.Round(rb.velocity.y,2) == 0){

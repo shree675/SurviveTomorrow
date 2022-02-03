@@ -12,15 +12,11 @@ public class WaterFountainHealthTrigger : MonoBehaviour
     public TextMeshProUGUI objectiveText;
     [SerializeField] Text text;
 
-    void Awake(){
-        
-    }
-    
     void OnTriggerEnter(Collider collider)
     {
+        food.SetActive(true);
         if (collider.name != "PlayerCube") return;
          HealthBarHandler.SetHealthBarValue(1f);
-        // play the sound of drinking water
         text.enabled=true;
         text.gameObject.SetActive(true);
         Instantiate(food, foodPosition, transform.rotation);
