@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
 	}
 
 	void FixedUpdate () {
-		offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * 2.5f, Vector3.up) * offset;
+		offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * 3f, Vector3.up) * offset;
         transform.position = cube.transform.position + offset;
         transform.LookAt(cube.transform.position+new Vector3(0f,0.1f,0f));
 	}
