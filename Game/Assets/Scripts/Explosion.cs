@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public float delay = 3f;
+    public float delay = 1.5f;
     private double time;
     public GameObject explosionEffect;
     public GameObject flame;

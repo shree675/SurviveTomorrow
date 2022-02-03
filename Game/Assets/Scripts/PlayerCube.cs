@@ -36,7 +36,7 @@ public class PlayerCube : MonoBehaviour
         if(exitTime>5f){
             text.enabled=false;
             text.gameObject.SetActive(false);
-            Application.Quit();
+            Application.LoadLevel("IntroScene");
         }
         if(HealthBarHandler.GetHealthBarValue()<=0){
             animator.SetBool("die",true);
