@@ -1,7 +1,7 @@
 # SurviveTomorrow
 
 ## About
-[Demo video](https://youtu.be/hr4J0QJkj8E) that presents the game.
+[Game demo video](https://youtu.be/hr4J0QJkj8E)
 
 SurviveTomorrow is a 3D survival game where the player needs to survive while also tackling obstacles, which are a consequence of harsh climate.
 
